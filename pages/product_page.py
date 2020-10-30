@@ -19,21 +19,25 @@ class PageObject(BasePage):
     def fined_name_book(self):
         login_link = self.browser.find_element(*ProductPageLocators.NAME_BOOK).text
         print(login_link)
+        return (login_link)
 
 
     def expected_name_book(self):
         login_link = self.browser.find_element(*ProductPageLocators.EXPECTED_NAME_BOOK).text
         print(login_link)
+        return (login_link)
 
     def fined_prise(self):
         login_link = self.browser.find_element(*ProductPageLocators.PRISE).text
         print(login_link)
+        return (login_link)
 
 
     def expected_prise(self):
         login_link = self.browser.find_element(*ProductPageLocators.EXPECTED_PRISE).text
         print(login_link)
-        
+        return (login_link)
+
 
 
 

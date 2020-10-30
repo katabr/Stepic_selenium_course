@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ab4dd8-cbe7-4fe7-a831-5fb02c361e7e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_product_page.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_product_page.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_product_page.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_product_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="519">
+              <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -48,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_page.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_page.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/product_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+            <state relative-caret-position="403">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -154,8 +149,8 @@
         <option value="$PROJECT_DIR$/pages/base_page.py" />
         <option value="D:/ЮDK/lessons_python/python 3_4_2.py" />
         <option value="$PROJECT_DIR$/pages/locators.py" />
-        <option value="$PROJECT_DIR$/test_product_page.py" />
         <option value="$PROJECT_DIR$/pages/product_page.py" />
+        <option value="$PROJECT_DIR$/test_product_page.py" />
       </list>
     </option>
   </component>
@@ -169,8 +164,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="width" value="1112" />
+    <option name="x" value="263" />
+    <option name="y" value="33" />
+    <option name="width" value="1623" />
     <option name="height" value="714" />
   </component>
   <component name="ProjectView">
@@ -236,7 +232,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="0" width="1112" height="714" extended-state="0" />
+    <frame x="263" y="33" width="1623" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -246,7 +242,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11596958" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.078055024" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -707,20 +703,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_product_page.py">
+    <entry file="file://$PROJECT_DIR$/pages/product_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="403">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/product_page.py">
+    <entry file="file://$PROJECT_DIR$/test_product_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="519">
+          <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
