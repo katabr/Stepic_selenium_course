@@ -1,12 +1,14 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from .base_page import BasePage
 from selenium.webdriver.common.by import By
-from .locators import MainPageLocators
-from .locators import LoginPageLocators
-from .login_page import LoginPage
-from pages.locators import ProductPageLocators
+
+
+from selenium.webdriver.support.ui import WebDriverWait as WDW
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
+from .base_page import BasePage
+from .basket_page import BasketPage
+from .locators import ProductPageLocators
 
 
 
@@ -39,11 +41,14 @@ class PageObject(BasePage):
         return (login_link)
 
 
+    # метод-проверка, что элемент отсутствует
+    def should_not_be_success_message(self):
+        assert not self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE),"Success message is presented"
 
+    # метод-проверка, для элемента, который не появляется некоторое время
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE),"Success message is presented, but should not be"
 
-    def test_guest_can_put_to_basket(browser):
-        link = "http://selenium1py.pythonanywhere.com"
-        page = MainPage(browser, link)
-        page.open()
-        login_page = page.go_to_login_page()
-        login_page.should_be_login_page()
+    # метод-проверка, для элемента, который был, но исчезает
+    def should_not_be_disappeared(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but should not be"

@@ -1,26 +1,23 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from .base_page import BasePage
-from selenium.webdriver.common.by import By
+from .basket_page import BasketPage
 from .locators import MainPageLocators
-from .locators import LoginPageLocators
-from .locators import ProductPageLocators
-from .login_page import LoginPage
-from selenium.common.exceptions import NoAlertPresentException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 class MainPage(BasePage):
+     def __init__(self, *args, **kwargs):
+        super(MainPage, self).__init__(*args, **kwargs)
 
-    def go_to_login_page(self):
-        login_link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
-        login_link.click()
-        #return LoginPage(browser=self.browser, url=self.browser.current_url)
 
-    # def should_be_login_link(self):
-    #     self.browser.find_element(By.CSS_SELECTOR, "#login_link")
 
-    def should_be_login_link(self):
-        assert self.is_element_present(*MainPageLocators.LOGIN_LINK), "Login link is not presented"
+
 
 
 
