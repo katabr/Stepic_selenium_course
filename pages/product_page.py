@@ -1,13 +1,6 @@
-import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 
-
-from selenium.webdriver.support.ui import WebDriverWait as WDW
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
 from .base_page import BasePage
-from .basket_page import BasketPage
+
 from .locators import ProductPageLocators
 
 
@@ -28,6 +21,15 @@ class PageObject(BasePage):
         login_link = self.browser.find_element(*ProductPageLocators.EXPECTED_NAME_BOOK).text
         print(login_link)
         return (login_link)
+
+    def should_be_name_book_equivalent_expected_name_book(self,name_book,expected_name_book ):
+
+        assert name_book == expected_name_book, "Name book doesn't match the expected "
+
+    def should_be_prise_equivalent_expected_prise(self,prise, expected_prise ):
+
+        assert prise == expected_prise, "Prise doesn't match the expected"
+
 
     def fined_prise(self):
         login_link = self.browser.find_element(*ProductPageLocators.PRISE).text
